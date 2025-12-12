@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Banquet Table Planner</title>
+
+  <script>
+    function planTables() {
+      // Ask user for inputs
+      let guestsInput = prompt("How many guests do you have?");
+      let tablesInput = prompt("How many tables are available?");
+
+      // Convert Strings -> Numbers
+      let guests = parseInt (guestsInput);
+      let tables = parseInt (tablesInput);
+
+      //Validate inputs 
+      if (isNaN(guests) || isNaN(tables) || guests < 1 || tables < 1) {
+        alert("Please enter numbers greater than 0");
+        return;
+      }
+
+      // Even distribution math
+      let baseGuestsPerTable = Math.floor(guests / tables);
+      let remainderGuests = guests % tables;
+
+      let biggerTables = remainderGuests; // Tables with +1 guest
+      let biggerSize = baseGuestsPerTable + 1;
+
+      let smallerTables = tables - remainderGuests; 
+      let smallerSize = baseGuestsPerTable;
+
+      //Build output sentence 
+      let message = "Your " + guests + " guests will be seated as follows ";
+      
+      
+      if (biggerTables > 0) {
+        message += biggerTables = " table" + (biggerTables > 1 ? "s" : "") + " of " + biggerSize;
+  
+      }
+
+      if (smallerTables> 0 && smallerSize >0){
+        if (biggerTables > 0) {
+          message += " and ";
+        }
+        message += smallerTables + " table" + (smallerTables > 1 ? "s" : "") + " of " + smallerSize;
+      }
+      message += ".";
+
+      alert(message);
+    }
+  </script> 
+  <button onclick="planTables()">Plan My Wedding Tables</button>  
+
+ 
+
+    
+  
+
+
+
+</head>
+<body>
+  
+</body>
+</html>
