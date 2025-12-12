@@ -1,0 +1,67 @@
+h1 {
+  font-family: "Georgia", serif;
+  color: #004d40;
+  text-align: center;
+  background-color: #e0f2f1;
+  padding: 15px;
+  
+}
+
+td {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: 1px solid #004d40;
+  text-align: center;
+  font-family: "Verdana", sans-serif;
+}
+
+.time-col {
+  background-color: #f1f8e9;
+  color: #33691e;
+  font-weight: bold;
+  font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 85%;
+
+}
+
+a:link {
+  color: #00695c;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4a148c;
+}
+
+a:active {
+  color: #ff5722;
+}
+
+a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+caption {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px;
+  color: #004d40;
+}
+

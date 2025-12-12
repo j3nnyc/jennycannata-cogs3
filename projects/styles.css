@@ -1,0 +1,77 @@
+.container {
+  width: 750px;
+  margin: auto;
+  text-align: center;
+}
+
+.dice img {
+  width: 150px;
+  max-width: 100%;
+  border: 5px solid #3cc6d0;
+  border-radius: 15px;
+  background-color:bisque;
+  box-shadow: 0 0 10px #3cc6d0;
+  filter: hue-rotate(20deg);
+  
+
+}
+
+body {
+  background-color: #f4a3f8;
+  font-family: 'Roboto', sans-serif;
+  color:cornflowerblue
+}
+
+h1 {
+  margin: 20px;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3cd07f;
+}
+
+h2, h3 {
+  margin: 20px;
+  font-size: 1rem;
+  font-weight: 350;
+  color: #3cd07f;
+}
+
+p {
+  color: #62bddf;
+}
+
+img {
+  width: 80%;
+  background-color: #1fdeef;
+  border-radius: 30%;
+  mix-blend-mode: hard-light;
+}
+
+
+.myBtn {
+  margin: 20px 0;
+  background-color: #3c70d0;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-weight: bold;
+  border: 3px solid #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+
+}
+.myBtn:hover {
+  background-color: #FFFFFF;
+  color: #3c70d0;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #3c70d0;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
